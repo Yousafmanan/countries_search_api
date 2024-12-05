@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.deepPurple,
         title: const Text(
           'Countries List',
           style: TextStyle(
@@ -45,7 +45,8 @@ class HomeScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 final country = countries[index];
                 return Card(
-                  color: Colors.grey.shade200,
+                  elevation: 8,
+                  color: Colors.grey.shade400,
                   margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
                   child: ListTile(
                     onTap: () {
